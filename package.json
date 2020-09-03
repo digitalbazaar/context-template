@@ -1,0 +1,41 @@
+{
+  "name": "context-template",
+  "version": "0.0.1",
+  "description": "Context template repository.",
+  "main": "js",
+  "module": "./dist/module.js",
+  "files": [
+    "contexts",
+    "dist/module.js",
+    "js/constants.js",
+    "js/index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/context-template"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/context-template/issues"
+  },
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com/"
+  },
+  "homepage": "https://github.com/digitalbazaar/context-template#readme",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-digitalbazaar": "^2.0.0",
+    "json-loader": "^0.5.7",
+    "rollup": "^1.16.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack && rollup -c",
+    "lint": "eslint *.js js"
+  }
+}

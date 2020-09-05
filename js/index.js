@@ -1,19 +1,19 @@
 'use strict';
 
+const context = require('../contexts/example-v1.jsonld');
 const constants = require('./constants');
-const fs = require('fs');
-const path = require('path');
+const {documentLoader} = require('./documentLoader');
+const {EXAMPLE_CONTEXT_URL, EXAMPLE_CBORLD_VALUE} = constants;
 
-exports.constants = constants;
-const contexts = exports.contexts = new Map();
+const contexts = new Map();
+contexts.set(constants.EXAMPLE_CONTEXT_URL, context);
 
-function _read(_path) {
-  return JSON.parse(
-    fs.readFileSync(
-      path.join(__dirname, _path),
-      {encoding: 'utf8'}));
-}
+const appContextMap = new Map();
+appContextMap.set(EXAMPLE_CONTEXT_URL, EXAMPLE_CBORLD_VALUE);
 
-contexts.set(
-  constants.EXAMPLE_CONTEXT_URL,
-  _read('../contexts/example-v1.jsonld'));
+module.exports = {
+  constants,
+  contexts,
+  appContextMap,
+  documentLoader
+};

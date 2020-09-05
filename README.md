@@ -32,19 +32,21 @@ npm install context-template
 ## Usage
 
 ```js
-const exampleContext = require('context-template');
+const {
+  contexts, constants, appContextMap, documentLoader
+} = require('context-template');
 
 // use URL in a JSON-LD context
 const obj = {
   "@context": [
-    exampleContext.constants.EXAMPLE_CONTEXT_URL,
+    constants.EXAMPLE_CONTEXT_URL,
     // ...
   ],
   // ...
 };
 
 // get context data for a specific context
-const data = exampleContext.contexts.get('https://w3id.org/example/v1');
+const data = contexts.get('https://w3id.org/example/v1');
 // ...
 ```
 
@@ -53,11 +55,14 @@ applications.
 
 ## API
 
-The library exports two properties:
+The library exports the following properties:
 - `constants`: A Object that maps constants to well-known context URLs. The
   main constant `EXAMPLE_CONTEXT_URL` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
+- `appContextMap`: For use with `cborld` library.
+- `documentLoader`
+
 
 ## Commercial Support
 

@@ -1,15 +1,18 @@
+/*!
+ * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ */
 'use strict';
 
-const context = require('../contexts/example-v1.jsonld');
+const context = require('../contexts/example-v1.json');
 const constants = require('./constants');
 const {documentLoader} = require('./documentLoader');
-const {EXAMPLE_CONTEXT_URL, EXAMPLE_CBORLD_VALUE} = constants;
+const {CONTEXT_URL, CBORLD_VALUE} = constants;
 
 const contexts = new Map();
-contexts.set(constants.EXAMPLE_CONTEXT_URL, context);
+contexts.set(constants.CONTEXT_URL, context);
 
 const appContextMap = new Map();
-appContextMap.set(EXAMPLE_CONTEXT_URL, EXAMPLE_CBORLD_VALUE);
+appContextMap.set(CONTEXT_URL, CBORLD_VALUE);
 
 module.exports = {
   constants,

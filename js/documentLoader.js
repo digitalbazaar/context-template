@@ -1,11 +1,14 @@
+/*!
+ * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ */
 'use strict';
 
-const {EXAMPLE_CONTEXT_URL} = require('./constants');
-const context = require('../contexts/example-v1.jsonld');
+const {CONTEXT_URL} = require('./constants');
+const context = require('../contexts/example-v1.json');
 
 module.exports = {
   documentLoader(url) {
-    if(url !== EXAMPLE_CONTEXT_URL) {
+    if(url !== CONTEXT_URL) {
       throw new Error(`Loading document "${url}" is not allowed.`);
     }
 

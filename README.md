@@ -4,7 +4,6 @@
 
 > A GitHub template repository for JSON-LD contexts.
 
-
 ## Table of Contents
 
 - [Background](#background)
@@ -39,7 +38,7 @@ const {
 // use URL in a JSON-LD context
 const obj = {
   "@context": [
-    constants.EXAMPLE_CONTEXT_URL,
+    constants.CONTEXT_URL,
     // ...
   ],
   // ...
@@ -57,7 +56,7 @@ applications.
 
 The library exports the following properties:
 - `constants`: A Object that maps constants to well-known context URLs. The
-  main constant `EXAMPLE_CONTEXT_URL` may be updated from time to time to the
+  main constant `CONTEXT_URL` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
 - `appContextMap`: For use with `cborld` library.

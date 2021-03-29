@@ -20,7 +20,7 @@ See also (related specs):
 
 ## Install
 
-Requires Node.js 10+
+Requires Node.js 12+
 
 To install via NPM:
 
@@ -43,6 +43,10 @@ const obj = {
   ],
   // ...
 };
+
+// Codec term map value for CBOR-LD
+constants.CBORLD_CODEC_VALUE
+// 0x0..
 
 // get context data for a specific context
 const data = contexts.get('https://w3id.org/example/v1');

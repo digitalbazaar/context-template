@@ -2,7 +2,6 @@
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
 const chai = require('chai');
-chai.use(require('dirty-chai'));
 chai.should();
 const {expect} = chai;
 
@@ -14,7 +13,7 @@ const contextUrl = constants.CONTEXT_URL;
 
 describe('Example Context', () => {
   it('constants', async () => {
-    expect(constants).to.exist();
+    expect(constants).to.exist;
     expect(constants).to.have.property('CBORLD_VALUE');
   });
 
@@ -23,7 +22,7 @@ describe('Example Context', () => {
   });
 
   it('appContextMap', async () => {
-    expect(appContextMap.get(contextUrl)).to.exist();
+    expect(appContextMap.get(contextUrl)).to.exist;
   });
 
   it('documentLoader', async () => {

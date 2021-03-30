@@ -1,6 +1,8 @@
 # Context Template Repository _(context-template)_
 
-<!-- [![NPM Version](https://img.shields.io/npm/v/context-template.svg?style=flat-square)](https://npm.im/context-template) -->
+[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/context-template/Node.js%20CI)](https://github.com/digitalbazaar/context-template/actions?query=workflow%3A%22Node.js+CI%22)
+[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/context-template)](https://codecov.io/gh/digitalbazaar/context-template)
+[![NPM Version](https://img.shields.io/npm/v/context-template.svg)](https://npm.im/context-template)
 
 > A GitHub template repository for JSON-LD contexts.
 

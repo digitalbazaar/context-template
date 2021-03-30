@@ -76,3 +76,5 @@ Digital Bazaar: support@digitalbazaar.com
 
 - BSD 3-Clause © Digital Bazaar
 - See the [LICENSE](./LICENSE) file for details.
+
+[webpack]: https://webpack.js.org/

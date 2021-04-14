@@ -7,7 +7,7 @@ const {expect} = chai;
 
 const {
   contexts, constants, appContextMap, CONTEXT_URL, CONTEXT
-} = require('..');
+} = require('../js/');
 
 const contextUrl = constants.CONTEXT_URL;
 

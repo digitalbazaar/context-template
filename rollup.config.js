@@ -11,7 +11,9 @@ module.exports = {
     commonjs({
       // explicitly list exports otherwise only have 'default'
       namedExports: {
-        'dist/context.js': ['contexts', 'constants']
+        'dist/context.js': [
+          'contexts', 'constants', 'CONTEXT', 'CONTEXT_URL', 'appContextMap'
+        ]
       }
     })
   ]

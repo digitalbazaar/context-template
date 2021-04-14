@@ -33,26 +33,21 @@ npm install context-template
 ## Usage
 
 ```js
-const {
-  contexts, constants, appContextMap, documentLoader
-} = require('context-template');
+import exampleCtx from 'context-template';
+// or
+const exampleCtx = require('context-template');
+const {contexts, constants, appContextMap} = exampleCtx;
 
-// use URL in a JSON-LD context
-const obj = {
-  "@context": [
-    constants.CONTEXT_URL,
-    // ...
-  ],
-  // ...
-};
+exampleCtx.CONTEXT_URL
+// 'https://w3id.org/example/v1'
 
 // Codec term map value for CBOR-LD
-constants.CBORLD_CODEC_VALUE
+exampleCtx.constants.CBORLD_CODEC_VALUE
 // 0x0..
 
 // get context data for a specific context
-const data = contexts.get('https://w3id.org/example/v1');
-// ...
+exampleCtx.CONTEXT
+// full context object
 ```
 
 This package can be used with bundlers, such as [webpack][], in browser
@@ -61,13 +56,13 @@ applications.
 ## API
 
 The library exports the following properties:
+- `CONTEXT_URL`
+- `CONTEXT`
 - `constants`: A Object that maps constants to well-known context URLs. The
   main constant `CONTEXT_URL` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
 - `appContextMap`: For use with `cborld` library.
-- `documentLoader`
-
 
 ## Commercial Support
 

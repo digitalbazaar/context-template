@@ -2,7 +2,7 @@ module.exports = function(config) {
   const bundler = process.env.BUNDLER || 'webpack';
   const frameworks = ['mocha', 'chai'];
 
-  const files = ['unit/*.js'];
+  const files = ['*.spec.js'];
 
   // browser launchers: https://npmjs.org/browse/keyword/karma-launcher
   // browsers: ['ChromeHeadless', 'Chrome', 'Firefox', 'Safari'],
@@ -47,7 +47,7 @@ module.exports = function(config) {
     // available preprocessors:
     // https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'unit/*.js': preprocessors,
+      '*.spec.js': preprocessors,
     },
 
     webpack: {
@@ -56,7 +56,6 @@ module.exports = function(config) {
       node: {
         Buffer: false,
         crypto: false,
-        setImmediate: false,
         util: false
       }
     }

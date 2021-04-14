@@ -6,8 +6,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const context = require('./context');
-const constants = require('./constants');
+const context = require('../js/context');
+const constants = require('../js/constants');
 
 // Serialize the context as JSON-LD
 fs.writeFileSync(

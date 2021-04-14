@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Context template repository.",
   "main": "js/index.js",
+  "module": "./dist/context.esm.js",
   "files": [
     "contexts",
     "dist/context.js",
@@ -53,7 +54,7 @@
     "clean": "rm -rf dist/* && rm -rf contexts/*",
     "lint": "eslint js test",
     "prepare": "npm run build",
-    "serialize": "node js/serialize.js",
+    "serialize": "node bin/serialize.js",
     "test": "npm run lint && npm run build && npm run test-node && npm run test-karma",
     "test-karma": "karma start test/karma.conf.js",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks test/*.spec.js"

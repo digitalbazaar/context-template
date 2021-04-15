@@ -57,8 +57,7 @@ applications.
 ## API
 
 The library exports the following properties:
-- `CONTEXT_URL`
-- `CONTEXT`
+- `CONTEXT_URL` and `CONTEXT` (it's recommended that context repositories only export one context).
 - `constants`: A Object that maps constants to well-known context URLs. The
   main constant `CONTEXT_URL` may be updated from time to time to the
   latest context location.

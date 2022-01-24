@@ -12,7 +12,8 @@ module.exports = {
       // explicitly list exports otherwise only have 'default'
       namedExports: {
         'dist/context.js': [
-          'contexts', 'constants', 'CONTEXT', 'CONTEXT_URL', 'appContextMap'
+          'contexts', 'constants', 'CONTEXT_V1', 'CONTEXT_URL_V1',
+          'appContextMap'
         ]
       }
     })

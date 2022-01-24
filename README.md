@@ -39,7 +39,7 @@ import exampleCtx from 'context-template';
 const exampleCtx = require('context-template');
 const {contexts, constants, appContextMap} = exampleCtx;
 
-exampleCtx.CONTEXT_URL
+exampleCtx.CONTEXT_URL_V1
 // 'https://w3id.org/example/v1'
 
 // Codec term map value for CBOR-LD
@@ -47,7 +47,7 @@ exampleCtx.constants.CBORLD_CODEC_VALUE
 // 0x0..
 
 // get context data for a specific context
-exampleCtx.CONTEXT
+exampleCtx.CONTEXT_V1
 // full context object
 ```
 
@@ -57,9 +57,9 @@ applications.
 ## API
 
 The library exports the following properties:
-- `CONTEXT_URL` and `CONTEXT` (it's recommended that context repositories only export one context).
+- `CONTEXT_URL_V1` and `CONTEXT_V1` (it's recommended that context repositories only export one context).
 - `constants`: A Object that maps constants to well-known context URLs. The
-  main constant `CONTEXT_URL` may be updated from time to time to the
+  main constant `CONTEXT_URL_V1` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
 - `appContextMap`: For use with `cborld` library.

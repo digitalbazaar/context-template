@@ -67,6 +67,10 @@ The library exports the following properties:
 - `contexts`: A `Map` that maps all context URLs to full context data.
 - `appContextMap`: For use with the [cborld][] library.
 
+## Status
+
+- `https://w3id.org/example/v1`: Under development. Not stable.
+
 ## Developing
 
 Source is available at:

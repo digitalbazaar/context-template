@@ -25,6 +25,13 @@
   },
   "homepage": "https://github.com/digitalbazaar/FIXME-context#readme",
   "license": "BSD-3-Clause",
+  "keywords": [
+    "JSON-LD context",
+    "JSON-LD",
+    "Linked Data",
+    "context",
+    "FIXME"
+  ],
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/plugin-transform-modules-commonjs": "^7.22.5",

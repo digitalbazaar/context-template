@@ -1,30 +1,28 @@
 /*!
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
  */
 const chai = require('chai');
 chai.should();
 const {expect} = chai;
 
 const {
-  contexts, constants, appContextMap, CONTEXT_URL_V1, CONTEXT_V1
+  CONTEXT, CONTEXT_URL, appContextMap, contexts, constants
 } = require('..');
 
-const contextUrl = constants.CONTEXT_URL_V1;
-
-describe('Example Context', () => {
+describe('Context', () => {
   it('constants', async () => {
     expect(appContextMap).to.exist;
     expect(constants).to.exist;
     expect(constants).to.have.property('CBORLD_VALUE');
-    expect(CONTEXT_URL_V1).to.exist;
-    expect(CONTEXT_V1).to.exist;
+    expect(CONTEXT_URL).to.exist;
+    expect(CONTEXT).to.exist;
   });
 
   it('contexts', async () => {
-    expect(contexts.get(contextUrl)).to.have.property('@context');
+    expect(contexts.get(CONTEXT_URL)).to.have.property('@context');
   });
 
   it('appContextMap', async () => {
-    expect(appContextMap.get(contextUrl)).to.exist;
+    expect(appContextMap.get(CONTEXT_URL)).to.exist;
   });
 });

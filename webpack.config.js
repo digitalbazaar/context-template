@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
+ */
+'use strict';
 module.exports = {
   output: {
     libraryTarget: 'commonjs',

@@ -1,5 +1,4 @@
 module.exports = function(config) {
-  const bundler = process.env.BUNDLER || 'webpack';
   const frameworks = ['mocha', 'chai'];
 
   const files = ['*.spec.js'];
@@ -19,7 +18,7 @@ module.exports = function(config) {
 
   // main bundle preprocessors
   const preprocessors = [];
-  preprocessors.push(bundler);
+  preprocessors.push('webpack');
   preprocessors.push('sourcemap');
 
   return config.set({
@@ -52,12 +51,7 @@ module.exports = function(config) {
 
     webpack: {
       devtool: 'inline-source-map',
-      mode: 'development',
-      node: {
-        Buffer: false,
-        crypto: false,
-        util: false
-      }
+      mode: 'development'
     }
   });
 };

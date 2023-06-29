@@ -1,4 +1,4 @@
-# context-template ChangeLog
+# @digitalbazaar/FIXME-context ChangeLog
 
 ## 1.0.0 - TBD
 

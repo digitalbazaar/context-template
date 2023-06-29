@@ -1,22 +1,33 @@
 /*!
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
  */
 'use strict';
 
 const context = require('./context');
-const constants = require('./constants');
-const {CONTEXT_URL_V1, CBORLD_VALUE} = constants;
 
+const constants = {
+  // default context output filename under ./contexts/
+  CONTEXT_FILENAME: 'example-v1.jsonld',
+  // default context well known URL id
+  CONTEXT_URL: 'https://w3id.org/example/v1',
+  // default context CBOR-LD codec id
+  // value between 0x0 and 0x7FFF for globally registered term codec values
+  // or >= 0x8000 for app-specific local terms
+  CBORLD_VALUE: 0x0
+};
+
+// map of all context URLs to context data
 const contexts = new Map();
-contexts.set(CONTEXT_URL_V1, context);
+contexts.set(constants.CONTEXT_URL, context);
 
+// map of all context URLs to CBOR-LD codec ids
 const appContextMap = new Map();
-appContextMap.set(CONTEXT_URL_V1, CBORLD_VALUE);
+appContextMap.set(constants.CONTEXT_URL, constants.CBORLD_VALUE);
 
 module.exports = {
-  constants,
-  contexts,
+  CONTEXT: context,
+  CONTEXT_URL: constants.CONTEXT_URL,
   appContextMap,
-  CONTEXT_URL_V1,
-  CONTEXT_V1: context
+  constants,
+  contexts
 };

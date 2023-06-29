@@ -1,4 +1,4 @@
-# FIXME Context _(@digitalbazaar/FIXME-context)_
+# FIXME JSON-LD Context _(@digitalbazaar/FIXME-context)_
 
 [![Build status](https://img.shields.io/github/actions/workflow/status/digitalbazaar/FIXME-context/main.yml)](https://github.com/digitalbazaar/FIXME-context/actions/workflow/main.yml)
 [![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/FIXME-context.svg)](https://npm.im/@digitalbazaar/FIXME-context)

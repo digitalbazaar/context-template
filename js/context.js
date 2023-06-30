@@ -5,9 +5,8 @@
 
 module.exports = {
   '@context': {
+    '@protected': true,
     id: '@id',
-    type: '@type',
-    '@protected': true
-
+    type: '@type'
   }
 };

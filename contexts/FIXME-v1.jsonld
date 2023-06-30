@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type"
+  }
+}

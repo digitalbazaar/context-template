@@ -7,9 +7,9 @@ const context = require('./context');
 
 const constants = {
   // default context output filename under ./contexts/
-  CONTEXT_FILENAME: 'example-v1.jsonld',
+  CONTEXT_FILENAME: 'FIXME-v1.jsonld',
   // default context well known URL id
-  CONTEXT_URL: 'https://w3id.org/example/v1',
+  CONTEXT_URL: 'https://w3id.org/FIXME/v1',
   // default context CBOR-LD codec id
   // value between 0x0 and 0x7FFF for globally registered term codec values
   // or >= 0x8000 for app-specific local terms

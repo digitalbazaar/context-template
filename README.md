@@ -41,7 +41,7 @@ const {contexts, constants, appContextMap} = ctx;
 
 // Default context URL
 ctx.CONTEXT_URL
-// -> 'https://w3id.org/example/v1'
+// -> 'https://w3id.org/FIXME/v1'
 
 // Default context data
 ctx.CONTEXT
@@ -69,7 +69,7 @@ The library exports the following properties:
 
 ## Status
 
-- `https://w3id.org/example/v1`: Under development. Not stable.
+- `https://w3id.org/FIXME/v1`: Under development. Not stable.
 
 ## Developing
 
